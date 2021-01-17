@@ -1,0 +1,77 @@
+/* Unopened lightbox */
+.lightbox {
+  display: none;
+}
+
+/* Opened lightbox */
+.lightbox:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Lightbox content */
+.lightbox figcaption {
+  position: relative;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+}
+
+/* Close button */
+.lightbox .close {
+  position: relative;
+  display: block;
+}
+
+.lightbox .close::after {
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  content: "×";
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Lightbox overlay */
+.lightbox .close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
+  content: "";
+  cursor: default;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-b-10 {
+  margin: 0 0 10px 0;
+}
+
+.width-25rem {
+  width: 25rem;
+}
+
+.width-15rem {
+  width: 15rem;
+}
