@@ -40,7 +40,7 @@ body {
   background-color: #fff;
   box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
   max-width: calc(100vw - 80px);
-  transition: all 1s ease;
+  transition: all 0.2s ease;
 }
 
 /* Lightbox background overlay */
