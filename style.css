@@ -8,12 +8,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h3 {
-  margin: 0;
-  padding: 1.5rem;
-  padding-bottom: 0.5rem;
-}
-
 /* Unopened lightbox */
 .lightbox {
   display: none;
@@ -50,15 +44,28 @@ h3 {
   transition: all 0.2s ease;
 }
 
+.lightbox > figure > figcaption > h3 {
+  margin: 0;
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+.lightbox > figure > figcaption.scrolling > h3 {
+  padding-bottom: 1rem;
+}
+
 .lightbox > figure > figcaption > p.content {
   margin: 0;
   padding: 1.5rem;
   padding-top: 0.5rem;
+  line-height: 1.5;
 }
 
 .lightbox > figure > figcaption.scrolling > p.content {
   max-height: 10rem;
   overflow: auto;
+  line-height: 1.5;
 }
 
 /* Lightbox background overlay */
