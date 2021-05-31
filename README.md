@@ -1,5 +1,3 @@
-
-
 # Pure CSS lightbox Modal
 
 > Using the `:target` pseudo-class to create modals without JavaScript
