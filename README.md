@@ -1,6 +1,6 @@
-# Pure CSS lightbox Modal
+# Pure CSS Modal
 
-> Using the `:target` pseudo-class to create modals without JavaScript
+> This uses the `:target` pseudo-class to open and close modals using CSS only - without JavaScript
 
 - [Live demo](https://css-modal-using-target-pseudo-class.rolandjlevy.repl.co/)
 - [Source code](https://repl.it/@RolandJLevy/css-modal-using-target-pseudo-class)
