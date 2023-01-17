@@ -5,8 +5,15 @@
 body {
   margin: 20px;
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  height: 100vh;
 }
+
+/******************/
+/* Modal lightbox */
+/******************/
 
 /* Unopened lightbox */
 .lightbox {
@@ -101,13 +108,55 @@ body {
   z-index: 1;
   align-items: center;
   justify-content: center;
-  background-color: #333;
+  background-color: #ddd;
   border-radius: 50%;
-  color: white;
-  font-weight: bold;
+  color: #000;
   content: "×";
   cursor: pointer;
   transition: background-color 0.2s ease;
+}
+
+.lightbox .close::after:hover {
+  background-color: #000;
+}
+
+/***********/
+/* Buttons */
+/***********/
+
+.btn-group {
+  display: flex;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  box-shadow: 0 5px 10px -3px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.main-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 ul > li {
@@ -119,7 +168,11 @@ ul > li {
 }
 
 .m-b-10 {
-  margin: 0 0 10px 0;
+  bottom: 10px;
+}
+
+.m-r-10 {
+  margin-right: 10px;
 }
 
 .width-15rem {
