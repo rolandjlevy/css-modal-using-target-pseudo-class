@@ -6,8 +6,8 @@ body {
   margin: 20px;
   font-size: 1rem;
   font-family: Helvetica, Arial, sans-serif;
-background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
   height: 100vh;
 }
 
@@ -48,7 +48,7 @@ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   padding: 0;
   border-radius: 0.5rem;
   background-color: #fff;
-  box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.3);
   max-width: calc(100vw - 80px);
   transition: all 0.2s ease;
 }
@@ -58,7 +58,6 @@ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   padding: 1.5rem;
   padding-bottom: 0.5rem;
 }
-
 
 .lightbox > figure > figcaption.scrolling > h3 {
   padding-bottom: 1rem;
@@ -85,7 +84,7 @@ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   height: 100%;
   position: fixed;
   background-color: black;
-  content: "";
+  content: '';
   cursor: default;
   opacity: 0.5;
   transition: opacity 0.5s ease;
@@ -111,7 +110,7 @@ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-color: #ddd;
   border-radius: 50%;
   color: #000;
-  content: "×";
+  content: '×';
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -146,7 +145,7 @@ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 
 .btn:hover {
   background-color: #fff;
-  box-shadow: 0 5px 10px -3px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease;
 }
 
@@ -185,4 +184,26 @@ ul > li {
 
 .width-45rem {
   width: 45rem;
+}
+
+/***********/
+/* Slider  */
+/***********/
+
+.slider {
+  right: -100%;
+}
+
+.slider:target {
+  right: 0;
+}
+
+.slider figure {
+  transition: transform 0.5s ease;
+  transform: translateX(100%);
+}
+
+.slider:target figure {
+  transition: transform 0.5s ease;
+  transform: translateX(0);
 }

@@ -5,6 +5,10 @@
 - [View demo](https://css-modal-using-target-pseudo-class.vercel.app/)
 - [Github repo](https://github.com/rolandjlevy/css-modal-using-target-pseudo-class)
 
+### How to run this front-end app
+
+- Install http-server: `npm i -g http-server` and run with: `http-server -c-1`
+- click 'Open in Browser' or from the Terminal click the link Forwarded Address link from PORTS
 
 ### Reference
 

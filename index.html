@@ -1,64 +1,97 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Pure CSS Modal</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>Pure CSS Modal</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <header>
+      <h2>Pure CSS modals</h2>
 
-<body>
+      <p class="main-text">
+        Built from scratch using CSS only (no JavaScript). These modals work
+        with the `:target` pseudo-class, are fully responsive and easy to
+        customise.
+      </p>
 
-  <header>
-    
-    <h2>Pure CSS modals</h2>
-
-    <p class="main-text">Built from scratch using CSS only (no JavaScript). These modals work with the `:target` pseudo-class, are fully responsive and easy to customise.</p>
-
-     <section class="btn-group">
+      <section class="btn-group">
         <a href="#example1" class="btn m-r-10">small</a>
         <a href="#example2" class="btn m-r-10">medium</a>
-        <a href="#example3" class="btn">large</a>
+        <a href="#example3" class="btn m-r-10">large</a>
+        <a href="#example4" class="btn">slider</a>
       </section>
-    
-  </header>
+    </header>
 
-  <section class="lightbox" id="example1">
-    <figure>
-      <a href="#" class="close"></a>
-      <figcaption class="width-15rem">
-        <h3>Small: 15rem width</h3>
-        <p class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </figcaption>
-    </figure>
-  </section>
+    <section class="lightbox" id="example1">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption class="width-15rem">
+          <h3>Small: 15rem width</h3>
+          <p class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
 
-  <section class="lightbox" id="example2">
-    <figure>
-      <a href="#" class="close"></a>
-      <figcaption class="width-30rem">
-        <h3>Medium: 30rem width</h3>
-        <p class="content">
-           Aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat. Sit amet commodo nulla facilisi nullam vehicula ipsum a arcu. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices.</p>
-      </figcaption>
-    </figure>
-  </section>
+    <section class="lightbox" id="example2">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption class="width-30rem">
+          <h3>Medium: 30rem width</h3>
+          <p class="content">
+            Aliquet porttitor lacus luctus accumsan tortor posuere ac ut
+            consequat. Sit amet commodo nulla facilisi nullam vehicula ipsum a
+            arcu. Aenean euismod elementum nisi quis eleifend quam adipiscing
+            vitae proin. Felis bibendum ut tristique et egestas quis ipsum
+            suspendisse ultrices.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
 
-  <section class="lightbox" id="example3">
-    <figure>
-      <a href="#" class="close"></a>
-      <figcaption class="width-45rem scrolling">
-        <h3>Large: 45rem width with scrolling</h3>
-        <p class="content">
-          Congue eu consequat ac felis donec et odio. Hac habitasse platea dictumst quisque sagittis. Fringilla urna porttitor rhoncus dolor purus non enim praesent. A erat nam at lectus. Ut etiam sit amet nisl purus in mollis nunc sed. Velit aliquet sagittis id consectetur. Ac tortor dignissim convallis aenean et tortor at risus viverra. Facilisi nullam vehicula ipsum a arcu cursus vitae. Fermentum posuere urna nec tincidunt praesent semper. Varius morbi enim nunc faucibus a. Eu mi bibendum neque egestas congue quisque egestas diam in. Eu lobortis elementum nibh tellus molestie nunc non. Egestas maecenas pharetra convallis posuere. Sit amet consectetur adipiscing elit ut aliquam purus sit. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Adipiscing diam donec adipiscing tristique risus nec.
-        </p>
-      </figcaption>
-    </figure>
-  </section>
+    <section class="lightbox" id="example3">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption class="width-45rem scrolling">
+          <h3>Large: 45rem width with scrolling</h3>
+          <p class="content">
+            Congue eu consequat ac felis donec et odio. Hac habitasse platea
+            dictumst quisque sagittis. Fringilla urna porttitor rhoncus dolor
+            purus non enim praesent. A erat nam at lectus. Ut etiam sit amet
+            nisl purus in mollis nunc sed. Velit aliquet sagittis id
+            consectetur. Ac tortor dignissim convallis aenean et tortor at risus
+            viverra. Facilisi nullam vehicula ipsum a arcu cursus vitae.
+            Fermentum posuere urna nec tincidunt praesent semper. Varius morbi
+            enim nunc faucibus a. Eu mi bibendum neque egestas congue quisque
+            egestas diam in. Eu lobortis elementum nibh tellus molestie nunc
+            non. Egestas maecenas pharetra convallis posuere. Sit amet
+            consectetur adipiscing elit ut aliquam purus sit. Feugiat sed lectus
+            vestibulum mattis ullamcorper velit sed. Adipiscing diam donec
+            adipiscing tristique risus nec.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
 
-</body>
-
+    <section class="lightbox slider" id="example4">
+      <figure>
+        <a href="#" class="close"></a>
+        <figcaption class="width-30rem">
+          <h3>Slider Panel</h3>
+          <p class="content">
+            This is a sliding panel that animates on and off the screen from the
+            right side.
+          </p>
+        </figcaption>
+      </figure>
+    </section>
+  </body>
 </html>
