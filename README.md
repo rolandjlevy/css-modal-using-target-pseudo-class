@@ -2,7 +2,7 @@
 
 > Built from scratch using CSS only (no JavaScript). These modals work with the `:target` pseudo-class, are fully responsive and easy to customise.
 
-- [View demo](https://css-modal-using-target-pseudo-class.vercel.app/))
+- [View demo](https://css-modal-using-target-pseudo-class.vercel.app/)
 - [Github repo](https://github.com/rolandjlevy/css-modal-using-target-pseudo-class)
 
 
